@@ -1,9 +1,9 @@
 # active-directory-mcp-server-by-cdata
 CData's Model Context Protocol (MCP) Server for Active Directory
 
-:heavy_exclamation_mark: This project builds a read-only MCP server. For full read, write, update, delete, and action capabilities and a simplified setup, check out our free [CData MCP Server for Active Directory (beta)](https://www.cdata.com/download/download.aspx?sku=CDZM-V&type=beta). 
+:heavy_exclamation_mark: This project builds a local, read-only MCP server. For fully remote MCP access, check out the first managed MCP platform: [CData Connect AI](https://www.cdata.com/ai/). For locally hosted, full read, write, update, delete, and action capabilities and a simplified setup, check out our free [CData MCP Server for Active Directory](https://www.cdata.com/drivers/activedirectory/download/mcp/).
 ## Purpose
-We created this read-only MCP Server to allow LLMs (like Claude Desktop) to query live data Active Directory supported by the [CData JDBC Driver for Active Directory](https://www.cdata.com/drivers/activedirectory/jdbc).
+We created this read-only MCP Server to allow LLMs (like Claude Desktop) to query live data Active Directory supported by the [CData JDBC Driver for Active Directory](https://www.cdata.com/drivers/activedirectory/jdbc/).
 
 CData JDBC Driver connects to Active Directory by exposing them as relational SQL models.
 
@@ -20,7 +20,7 @@ This server wraps that driver and makes Active Directory data available through 
       mvn clean install
       ``` 
       This creates the JAR file: CDataMCP-jar-with-dependencies.jar
-2. Download and install the CData JDBC Driver for {source}: [https://www.cdata.com/drivers/activedirectory/download/jdbc](https://www.cdata.com/drivers/activedirectory/download/jdbc)
+2. Download and install the CData JDBC Driver for {source}: [https://www.cdata.com/drivers/activedirectory/download/jdbc](https://www.cdata.com/drivers/activedirectory/download/jdbc/)
 3. License the CData JDBC Driver:
     * Navigate to the `lib` folder in the installation directory, typically:
         * (Windows) `C:\Program Files\CData\CData JDBC Driver for Active Directory\`
